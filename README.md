@@ -1,6 +1,6 @@
 # Selenium-with-Python
-## Target:
-This is a my learing by myself to explore and impove my knowlegde and skill about Selenium framework combine Python programming language
+## Objective:
+This is a my learning by myself to explore and impove the knowlegde and skills about Selenium framework combine Python programming language
 ## Contents:
 - Writing tests using unittest
 - Using the Selenium Python API for element interaction
