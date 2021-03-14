@@ -7,12 +7,12 @@ class Alert(unittest.TestCase):
         cls.driver = webdriver.Chrome()
         cls.driver.implicitly_wait(3)
         cls.driver.maximize_window()
-        cls.driver.get('') # NHẬP URL 
+        cls.driver.get('') # enter URL 
 
     def test_alert(self):
         driver = self.driver
         alert = driver.switch_to_alert()
-        self.assertEqual('',alert.text)
+        self.assertEqual('',alert.text) # enter text of alert to compare
         alert.accept()
     @classmethod
     def tearDownClass(cls):
