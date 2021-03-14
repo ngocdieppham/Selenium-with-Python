@@ -1,4 +1,3 @@
-# CI with Jenkins
 import unittest
 from xmlrunner import xmlrunner
 
