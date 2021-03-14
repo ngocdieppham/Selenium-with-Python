@@ -2,7 +2,7 @@
 ## Objective:
 This is a my learning by myself to explore and impove the knowlegde and skills about Selenium framework combine Python programming language
 ## Contents:
-- Writing tests using unittest
+- Writing tests using unittest: searchtests.py, homepagetests.py, testsuite.py, html_testreport.py
 - Using the Selenium Python API for element interaction
 - Synchronizing Tests
 - Cross-browser testing
