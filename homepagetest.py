@@ -12,17 +12,17 @@ class HomePageTest(unittest.TestCase):
         cls.driver.get('') # enter url of website
 
     def test_search_field(self):
-        self.assertTrue(self.is_element_present(By.NAME,'q'))
+        self.assertTrue(self.is_element_present(By.NAME,'')) 
     
     def test_language_option(self):
-        self.assertTrue(self.is_element_present(By.ID,'topActionSwitchLang'))
+        self.assertTrue(self.is_element_present(By.ID,''))
     
     def test_shopping_cart_empty_message(self):
-        shopping_cart_icon = self.driver.find_element_by_class_name('cart-icon')
+        shopping_cart_icon = self.driver.find_element_by_class_name('')
         shopping_cart_icon.click()
-        shopping_cart_status = self.driver.find_element_by_class_name('cart-empty-text').text
-        self.assertTrue('There are no items in this cart',shopping_cart_status)
-        close_cart = self.driver.find_element_by_class_name('next-btn next-btn-secondary next-btn-large cart-empty-button').click()
+        shopping_cart_status = self.driver.find_element_by_class_name('').text
+        self.assertTrue('',shopping_cart_status)
+        close_cart = self.driver.find_element_by_class_name('').click()
     
     @classmethod
     def tearDownClass(cls):
