@@ -10,12 +10,12 @@ class Wait(unittest.TestCase):
         cls.driver = webdriver.Chrome()
         cls.driver.implicitly_wait(3)
         cls.driver.maximize_window()
-        cls.driver.get('http://www.lazada.vn')
+        cls.driver.get('')
 
     def test_login_link(self):
         driver = self.driver
         # login_button = driver.find_element_by_link_text('LOGIN')
-        # explicit_wait là chờ đợi trong 1 khoảng thời gian đi kèm với 1 điều kiện
+        # explicit_wait is to wait for a period of time with a condition
         login_button = WebDriverWait(driver,5).until(expected_conditions.visibility_of_element_located((By.LINK_TEXT,'LOGIN')))
         login_button.click()
 

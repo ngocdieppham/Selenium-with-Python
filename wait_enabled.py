@@ -10,7 +10,7 @@ class WaitEnabled(unittest.TestCase):
         cls.driver = webdriver.Chrome()
         cls.driver.implicitly_wait(3)
         cls.driver.maximize_window()
-        cls.driver.get('http://www.lazada.vn')
+        cls.driver.get('')
         WebDriverWait(cls.driver,3).until(expected_conditions.title_contains('Shopping online - Buy online on Lazada.vn'))
 
     def test_account(self):
