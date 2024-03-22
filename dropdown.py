@@ -7,7 +7,7 @@ class SelectLanguage(unittest.TestCase):
         cls.driver = webdriver.Chrome()
         cls.driver.implicitly_wait(3)
         cls.driver.maximize_window()
-        cls.driver.get('') # NHẬP URL CỦA WEBSITE 
+        cls.driver.get('') # ENTER URL CỦA WEBSITE 
 
     def test_language_option(self):
         exp_option = ['VietNam','English','France']
@@ -18,18 +18,18 @@ class SelectLanguage(unittest.TestCase):
         for option in select_language.options:
             act_option.append(option.text)
 
-        # so sánh 2 List
+        # assert 2 List
         self.assertListEqual(exp_option,act_option) 
-        # so sánh lựa chọn ngôn ngữ đầu tiên mặc định
+        # assert choosing default language
         self.assertEqual('English',select_language.first_selected_option.text)
-        # chọn ngôn ngữ khác
+        # choose another language
         select_language.select_by_visible_text('France')
-        # check url có ngôn ngữ đã chọn hay chưa ?
+        # check chosen language in url ?
         self.assertTrue('store=France' in self.driver.current_url)
-        # sau khi chon ngôn ngữ mới sẽ refesh lại trang
-        # cần chọn lại thẻ select
+        # refresh page after choosing new language
+        # choose select tag again
         select_language = self.driver.find_element_by_id('select_language')
-        # chọn ngôn ngữ bằng chỉ mục
+        # choose language by index
         select_language.select_by_index(0)
 
     @classmethod
