@@ -6,7 +6,7 @@ This is a my self-learning to explore and impove the knowlegde and skills about 
     + Test cases: searchtests.py, homepagetests.py
     + Test suite: testsuite.py
     + Test report: html_test_report.py
-- Using the Selenium Python API for element interaction: alert.py, create_account.py, dropdown.py
+- Using the Selenium Python API for element interaction: alert.py, dropdown.py
 - Synchronizing Tests: wait_alert.py,wait_enable.py, wait_explicit.py
 - Cross-browser testing
 - Advanced:pop_up_window.py, recording.py, screenshot.py
