@@ -7,7 +7,7 @@ class Alert(unittest.TestCase):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(3)
         self.driver.maximize_window()
-        self.driver.get('') # NHẬP URL 
+        self.driver.get('') # ENTER URL 
 
     def test_alert(self):
         driver = self.driver

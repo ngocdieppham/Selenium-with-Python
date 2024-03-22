@@ -7,7 +7,7 @@ class SelectLanguage(unittest.TestCase):
         cls.driver = webdriver.Chrome()
         cls.driver.implicitly_wait(3)
         cls.driver.maximize_window()
-        cls.driver.get('') # ENTER URL CỦA WEBSITE 
+        cls.driver.get('') # ENTER URL  
 
     def test_language_option(self):
         exp_option = ['VietNam','English','France']
