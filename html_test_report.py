@@ -20,6 +20,6 @@ runner = HTMLTestRunner.HTMLTestRunner(
 )
 runner.run(smoke_test)
 
-# xuất nội dung outfile TestReport.html trong terminal
+# export content of outfile TestReport.html into terminal
 # if __name__=='__main__':
     # HTMLTestRunner.main()
