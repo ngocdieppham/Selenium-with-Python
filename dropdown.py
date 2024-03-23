@@ -3,11 +3,11 @@ import unittest
 
 class SelectLanguage(unittest.TestCase):
     @classmethod
-    def setUpClass(cls):
-        cls.driver = webdriver.Chrome()
-        cls.driver.implicitly_wait(3)
-        cls.driver.maximize_window()
-        cls.driver.get('') # ENTER URL  
+    def setUpClass(self):
+        self.driver = webdriver.Chrome()
+        self.driver.implicitly_wait(3)
+        self.driver.maximize_window()
+        self.driver.get('') # ENTER URL  
 
     def test_language_option(self):
         exp_option = ['VietNam','English','France']
