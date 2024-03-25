@@ -6,21 +6,21 @@ from selenium.webdriver.common.by import By
 
 class Alert(unittest.TestCase):
     @classmethod
-    def setUpClass(cls):
-        cls.driver = webdriver.Chrome()
-        cls.driver.implicitly_wait(3)
-        cls.driver.maximize_window()
-        cls.driver.get('') # ENTER URL 
+    def setUpClass(self):
+        self.driver = webdriver.Chrome()
+        self.driver.implicitly_wait(3)
+        self.driver.maximize_window()
+        self.driver.get('') # ENTER URL 
 
     def test_alert(self):
         driver = self.driver
-        # alert = driver.switch_to_alert()
         alert = WebDriverWait(driver,5).until(expected_conditions.alert_is_present())
         self.assertEqual('',alert.text)
         alert.accept()
+
     @classmethod
-    def tearDownClass(cls):
-        cls.driver.quit()
+    def tearDownClass(self):
+        self.driver.quit()
 
 if __name__=='__main__':
-    unittest.main(verbosity=2)
+    unittest.main(verbosity=1)
