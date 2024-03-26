@@ -2,8 +2,8 @@ import unittest
 from HTMLTestRunner import HTMLTestRunner
 import os
 
-from searchtests import SearchTests
-from homepagetest import HomePageTest
+from searchTests import SearchTests
+from homepageTest import HomePageTest
 
 dir = os.getcwd()
 

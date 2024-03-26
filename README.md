@@ -3,8 +3,8 @@
 This is a my self-learning to explore and impove the knowlegde and skills about Selenium framework combine Python programming language
 ## Contents:
 - Writing tests using Unittest library:
-    + Test cases: searchtests.py, homepagetests.py
-    + Test suite: testsuite.py
+    + Test cases: searchTests.py, homepageTests.py
+    + Test suite: testSuite.py
     + Test report: html_test_report.py
 - Using the Selenium Python API for element interaction: alert.py, dropdown.py
 - Synchronizing Tests: wait_alert.py,wait_enable.py, wait_explicit.py
