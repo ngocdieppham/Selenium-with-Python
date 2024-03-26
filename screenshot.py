@@ -15,14 +15,11 @@ class ScreenShot(unittest.TestCase):
             element = driver.find_element_by_id ('element')
         except NoSuchElementException:
             st = datetime.datetime.fromtimestamp(time.time()).strftime('%Y%m%d_%H%M%S')
-            # save trong thư mục chapter_9
+            # save to directory
             file_name = 'PYTHON\chapter_9\element' + st + '.png'
-            # file_name = 'E:\HOCTAP\KIEM THU TU DONG\SELENIUM\PYTHON\chapter_9\element' + st + '.png'
             driver.get_screenshot_as_file(file_name)
-
-            # save trong thư mục hiện tại -->PYTHON
-            # file_name = 'element'+ st +'.png'
-            # driver.save_screenshot(file_name)
+            # or driver.save_screenshot(file_name)
+            
             raise
 
     def tearDown(self):
