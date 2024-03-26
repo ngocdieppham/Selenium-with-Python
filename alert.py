@@ -12,7 +12,7 @@ class Alert(unittest.TestCase):
     def test_alert(self):
         driver = self.driver
         alert = driver.switch_to_alert()
-        self.assertEqual('',alert.text)
+        self.assertEqual('',alert.text) #add alert's text
         alert.accept()
         #alert.dismiss()
 
