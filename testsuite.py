@@ -1,7 +1,7 @@
 import unittest
 
-from searchtests import SearchTests
-from homepagetest import HomePageTest
+from searchTests import SearchTests
+from homepageTest import HomePageTest
 
 search_test = unittest.TestLoader().loadTestsFromTestCase(SearchTests)
 home_page_test = unittest.TestLoader().loadTestsFromTestCase(HomePageTest)
