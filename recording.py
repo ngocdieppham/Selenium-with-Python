@@ -4,7 +4,7 @@ from castro import Castro
 
 class SearchProductTest(unittest.TestCase):
     def setUp(self):
-        # tạo ra 1 đối tượng (hay thể hiện) Castro và init nó
+        # create a object or instance of Castro and init 
         self.screenCapture = Castro(filename='PYTHON/chapter_9/testSearchByCategory.swf')
         self.screenCapture.start()
         self.driver = webdriver.Chrome()
@@ -27,5 +27,5 @@ class SearchProductTest(unittest.TestCase):
         self.screenCapture.stop()
 
 if __name__=='__main__':
-    unittest.main(verbosity=2)
+    unittest.main(verbosity=1)
 
