@@ -5,11 +5,11 @@ from selenium.webdriver.common.by import By
 
 class HomePageTest(unittest.TestCase):
     @classmethod
-    def setUpClass(cls):
-        cls.driver = webdriver.Chrome()
-        cls.driver.implicitly_wait(3)
-        cls.driver.maximize_window()
-        cls.driver.get('') # enter url of website
+    def setUpClass(self):
+        self.driver = webdriver.Chrome()
+        self.driver.implicitly_wait(3)
+        self.driver.maximize_window()
+        self.driver.get('') # enter url of website
 
     def test_search_field(self):
         self.assertTrue(self.is_element_present(By.NAME,'')) 
@@ -25,8 +25,8 @@ class HomePageTest(unittest.TestCase):
         close_cart = self.driver.find_element_by_class_name('').click()
     
     @classmethod
-    def tearDownClass(cls):
-        cls.driver.quit()
+    def tearDownClass(self):
+        self.driver.quit()
     
     def is_element_present(self,how,what):
         """
@@ -39,4 +39,4 @@ class HomePageTest(unittest.TestCase):
         return True
 
 if __name__=='__main__':
-    unittest.main(verbosity=2)
+    unittest.main(verbosity=3)
