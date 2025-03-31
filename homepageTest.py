@@ -3,19 +3,19 @@ import unittest
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 
-class HomePageTest(unittest.TestCase):
+class homePageTest(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(3)
         self.driver.maximize_window()
-        self.driver.get('') # enter url of website
+        self.driver.get('http://www.lazada.vn') # enter url of website
 
     def test_search_field(self):
-        self.assertTrue(self.is_element_present(By.NAME,'')) 
+        self.assertTrue(self.is_element_present(By.NAME,'q'))
     
     def test_language_option(self):
-        self.assertTrue(self.is_element_present(By.ID,''))
+        self.assertTrue(self.is_element_present(By.ID,'select-language'))
     
     def test_shopping_cart_empty_message(self):
         shopping_cart_icon = self.driver.find_element_by_class_name('')
