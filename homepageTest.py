@@ -3,7 +3,7 @@ import unittest
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 
-class homePageTest(unittest.TestCase):
+class HomePageTest(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         self.driver = webdriver.Chrome()
