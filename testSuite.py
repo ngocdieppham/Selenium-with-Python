@@ -1,6 +1,6 @@
 import unittest
 
-from searchTests import SearchTests
+from searchTest import SearchTests
 from homepageTest import HomePageTest
 
 search_test = unittest.TestLoader().loadTestsFromTestCase(SearchTests)

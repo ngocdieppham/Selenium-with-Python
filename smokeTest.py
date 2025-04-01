@@ -1,7 +1,7 @@
 import unittest
 from xmlrunner import xmlrunner
 
-from searchTests import SearchTests
+from searchTest import SearchTests
 from homepageTest import HomePageTest
 
 search_test = unittest.TestLoader().loadTestsFromTestCase(SearchTests)
