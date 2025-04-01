@@ -2,7 +2,7 @@ import unittest
 from HTMLTestRunner import HTMLTestRunner
 import os
 
-from searchTests import SearchTests
+from searchTest import SearchTests
 from homepageTest import HomePageTest
 
 dir = os.getcwd()
