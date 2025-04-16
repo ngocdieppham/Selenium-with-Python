@@ -1,6 +1,6 @@
 # Selenium-with-Python
 ## Objective:
-This is a my self-learning to explore and impove the knowlegde and skills about Selenium framework combine Python programming language
+This is a self-learning project to explore and improve the knowlegde and skills about Selenium framework combine Python programming language
 ## Contents:
 - Writing tests using Unittest library:
     + Test cases: searchTest.py, homepageTest.py
